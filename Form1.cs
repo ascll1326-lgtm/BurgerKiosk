@@ -50,10 +50,10 @@ namespace BurgerKiosk
             lstTotalCost.Items.Clear();
             int totalCost = 0;
 
-            // 🍔 버거 (라디오 버튼)
+
             if (rdoCheeseBurger.Checked)
             {
-                
+
                 lstTotalCost.Items.Add("치즈버거 :" + 5000.ToString("N0") + "원");
                 totalCost += 5000;
             }
@@ -70,7 +70,7 @@ namespace BurgerKiosk
 
             if (ckSide1.Checked)
             {
-                
+
                 lstTotalCost.Items.Add("감자튀김 :" + 3500.ToString("N0") + "원");
 
 
@@ -144,6 +144,8 @@ namespace BurgerKiosk
             {
                 totalCost += 500;
             }
+
+           
 
             lblTotalCost.Text = "총 금액:" + totalCost.ToString("N0") + "원";
         }

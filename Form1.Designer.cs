@@ -81,7 +81,7 @@
             gbMainMenu.Location = new Point(40, 182);
             gbMainMenu.Name = "gbMainMenu";
             gbMainMenu.Size = new Size(522, 704);
-            gbMainMenu.TabIndex = 15;
+            gbMainMenu.TabIndex = 0;
             gbMainMenu.TabStop = false;
             gbMainMenu.Enter += groupBox1_Enter;
             // 
@@ -172,7 +172,7 @@
             gbSideMenu.Location = new Point(643, 182);
             gbSideMenu.Name = "gbSideMenu";
             gbSideMenu.Size = new Size(357, 553);
-            gbSideMenu.TabIndex = 16;
+            gbSideMenu.TabIndex = 1;
             gbSideMenu.TabStop = false;
             // 
             // ckSide4
@@ -283,7 +283,7 @@
             btnOrder.Location = new Point(1188, 766);
             btnOrder.Name = "btnOrder";
             btnOrder.Size = new Size(219, 84);
-            btnOrder.TabIndex = 18;
+            btnOrder.TabIndex = 2;
             btnOrder.Text = "주문하기";
             btnOrder.UseVisualStyleBackColor = false;
             btnOrder.Click += btnOrder_Click;
@@ -303,6 +303,7 @@
             // 
             // FMBurgerOrder
             // 
+            AcceptButton = btnOrder;
             AutoScaleDimensions = new SizeF(14F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1777, 956);
