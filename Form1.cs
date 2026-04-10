@@ -56,36 +56,46 @@ namespace BurgerKiosk
 
                 lstTotalCost.Items.Add("치즈버거 :" + 5000.ToString("N0") + "원");
                 totalCost += 5000;
+                lblTotalCost.Text = "총 금액:" + totalCost.ToString("N0") + "원";
             }
             else if (rdoChikenBurger.Checked)
             {
                 lstTotalCost.Items.Add("치킨버거 :" + 4000.ToString("N0") + "원");
                 totalCost += 4000;
+                lblTotalCost.Text = "총 금액:" + totalCost.ToString("N0") + "원";
             }
             else if (rdoBulgogiburger.Checked)
             {
                 lstTotalCost.Items.Add("불고기버거 :" + 3000.ToString("N0") + "원");
                 totalCost += 3000;
+                lblTotalCost.Text = "총 금액:" + totalCost.ToString("N0") + "원";
             }
 
             if (ckSide1.Checked)
             {
 
                 lstTotalCost.Items.Add("감자튀김 :" + 3500.ToString("N0") + "원");
-
+                totalCost += 3500;
+                lblTotalCost.Text = "총 금액:" + totalCost.ToString("N0") + "원";
 
             }
             if (ckSide2.Checked)
             {
                 lstTotalCost.Items.Add("콜라 :" + 2500.ToString("N0") + "원");
+                totalCost += 2500;
+                lblTotalCost.Text = "총 금액:" + totalCost.ToString("N0") + "원";
             }
             if (ckSide3.Checked)
             {
                 lstTotalCost.Items.Add("치즈추가 :" + 1500.ToString("N0") + "원");
+                totalCost += 1500;
+                lblTotalCost.Text = "총 금액:" + totalCost.ToString("N0") + "원";
             }
             if (ckSide4.Checked)
             {
                 lstTotalCost.Items.Add("소스추가 :" + 500.ToString("N0") + "원");
+                totalCost += 500;
+                lblTotalCost.Text = "총 금액:" + totalCost.ToString("N0") + "원";
             }
 
 
@@ -147,7 +157,7 @@ namespace BurgerKiosk
 
 
 
-            lblTotalCost.Text = "총 금액:" + totalCost.ToString("N0") + "원";
+            
         }
 
         private void btnClear_Click(object sender, EventArgs e)
