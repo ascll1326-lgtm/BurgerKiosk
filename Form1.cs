@@ -10,7 +10,7 @@ namespace BurgerKiosk
 
 
 
-        
+
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
@@ -109,7 +109,7 @@ namespace BurgerKiosk
                 return;
             }
 
-           UpdateMenu();
+            UpdateMenu();
             int totalCost = 0;
 
             if (rdoCheeseBurger.Checked)
@@ -145,14 +145,14 @@ namespace BurgerKiosk
                 totalCost += 500;
             }
 
-           
+
 
             lblTotalCost.Text = "총 금액:" + totalCost.ToString("N0") + "원";
         }
 
         private void btnClear_Click(object sender, EventArgs e)
         {
-           rdoCheeseBurger.Checked = false;
+            rdoCheeseBurger.Checked = false;
             rdoChikenBurger.Checked = false;
             rdoBulgogiburger.Checked = false;
 
@@ -165,6 +165,14 @@ namespace BurgerKiosk
             // 📋 리스트박스 초기화
             lstTotalCost.Items.Clear();
             lblTotalCost.Text = "총 금액: 0원";
+        }
+
+        private void FMBurgerOrder_Load(object sender, EventArgs e)
+        {
+            this.ActiveControl = rdoCheeseBurger;
+            gbMainMenu.TabStop = true;
+            gbSideMenu.TabStop = true;
+           
         }
     }
 }

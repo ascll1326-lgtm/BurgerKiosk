@@ -263,6 +263,7 @@
             lstTotalCost.Name = "lstTotalCost";
             lstTotalCost.Size = new Size(453, 324);
             lstTotalCost.TabIndex = 16;
+            lstTotalCost.TabStop = false;
             // 
             // lblBill
             // 
@@ -296,7 +297,7 @@
             btnClear.Location = new Point(1440, 766);
             btnClear.Name = "btnClear";
             btnClear.Size = new Size(219, 84);
-            btnClear.TabIndex = 19;
+            btnClear.TabIndex = 3;
             btnClear.Text = "처음으로";
             btnClear.UseVisualStyleBackColor = false;
             btnClear.Click += btnClear_Click;
@@ -316,6 +317,7 @@
             ForeColor = SystemColors.ActiveCaptionText;
             Name = "FMBurgerOrder";
             Text = "Burger Kiosk";
+            Load += FMBurgerOrder_Load;
             gbMainMenu.ResumeLayout(false);
             gbMainMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
